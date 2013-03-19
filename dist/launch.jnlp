@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>HelpSessions</title>
+        <vendor>drew</vendor>
+        <homepage href=""/>
+        <description>HelpSessions</description>
+        <description kind="short">HelpSessions</description>
+    <offline-allowed/>
+</information>
+    <update check="background"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy  -Xint" version="1.7+"/>
+        <jar href="HelpSessions.jar" main="true"/>
+    <jar href="lib/joda-time-2.1.jar"/>
+<jar href="lib/mysql-connector-java-5.1.23-bin.jar"/>
+<jar href="lib/mail.jar"/>
+<jar href="lib/javax.persistence.jar"/>
+<jar href="lib/javax.validation-1.0.0.GA.jar"/>
+</resources>
+    <applet-desc height="600" main-class="applet.BookingApplet" name="HelpSessions" width="800">
+    </applet-desc>
+</jnlp>
