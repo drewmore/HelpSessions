@@ -41,8 +41,8 @@ public class DBHandler implements Runnable {
      }
      public void run() {
      
-     String userName = "laneycc";
-     String password = "2013Java";
+     String userName = "*******";
+     String password = "*******";
 
      String url = "jdbc:mysql://74.53.183.225:3306/laneycc_tutors";
      String qry = "select * FROM avail";
